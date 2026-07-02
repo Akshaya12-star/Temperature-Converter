@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#667eea,#764ba2,#6dd5ed,#2193b0);
+    background-size:400% 400%;
+    animation:gradient 12s ease infinite;
+}
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+.container{
+    width:420px;
+    padding:40px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.25),
+    inset 0 0 15px rgba(255,255,255,.15);
+
+    transition:.4s;
+}
+
+.container:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.4),
+    0 0 30px rgba(255,255,255,.3);
+}
+h1{
+    color:white;
+    font-size:32px;
+    margin-bottom:25px;
+    text-shadow:0 0 12px rgba(255,255,255,.5);
+}
+input,
+select{
+    width:100%;
+    padding:15px;
+    margin:15px 0;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:rgba(255,255,255,.18);
+    color:white;
+    font-size:16px;
+    transition:.3s;
+}
+input::placeholder{
+    color:#eee;
+}
+select{
+    color:white;
+}
+option{
+    color:black;
+}
+input:focus,
+select:focus{
+    transform:scale(1.03);
+    background:rgba(255,255,255,.28);
+    box-shadow:
+    0 0 15px #00ffe5;
+}
+button{
+    width:100%;
+    padding:15px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:linear-gradient(45deg,#00F5A0,#00D9F5);
+
+    transition:.35s;
+}
+button:hover{
+    transform:scale(1.05);
+    box-shadow:
+    0 0 20px #00ffe5,
+    0 0 40px #00ffe5;
+}
+#result{
+
+    margin-top:25px;
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-shadow:0 0 10px cyan;
+
+    min-height:40px;
+}
